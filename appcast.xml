@@ -3,13 +3,26 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.18</title>
-            <pubDate>Wed, 12 Aug 2026 13:43:30 +0800</pubDate>
-            <sparkle:version>45</sparkle:version>
-            <sparkle:shortVersionString>0.11.18</sparkle:shortVersionString>
+            <title>0.11.19</title>
+            <pubDate>Wed, 12 Aug 2026 17:39:07 +0800</pubDate>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>0.11.19</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.18.zip" length="2839912" type="application/octet-stream" sparkle:edSignature="P56Sddw5g1txHdlgYfsH5kGvYzrmeUu75HPAPhYEj1vTJyFXIg4k97XI7GN00gsulljhT4ujBA0Id/Ac5RoxDA=="/>
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.19
+
+本次更新重点提升口测时的语音可靠性：
+
+- 明显没说完的问题会等待后半句；完整新问题会立即换题，不再长期显示“考官正在补充”。
+- 手机免提“电话考官”模式启用实时说话人区分，考官问题和学生回答不会再混为同一类。
+- 追问会携带上一问和学生真实回答；例如回答 swimming 后，后续 why 模板会继续使用 swimming。
+- 增加静音保活、迟到终稿去重、音频设备变化恢复，以及网络/音频捕获统一自动重连。
+- 修复音频启动失败后可能残留旧捕获流的问题。
+- 题库外问题会先显示贴题的本地即时回答，再由 DeepSeek 进一步生成；网络较慢时不再先出现空泛、答非所问的句子。
+
+题库仍提供完整回答和简单备用回答两套模板，英文下方保留中文翻译。
+]]></description>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.19.zip" length="2877284" type="application/octet-stream" sparkle:edSignature="+XYJ84F4oVW1zQcf7x2M6zq6DISqhxTo3nwWA3ggvr2RG835D7byJpkU+TFx2xIVybJfcmQba3Fa77Tm2UrvAQ=="/>
         </item>
     </channel>
 </rss>
