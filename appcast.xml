@@ -3,31 +3,26 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.20</title>
-            <pubDate>Wed, 12 Aug 2026 19:14:34 +0800</pubDate>
-            <sparkle:version>47</sparkle:version>
-            <sparkle:shortVersionString>0.11.20</sparkle:shortVersionString>
+            <title>0.11.21</title>
+            <pubDate>Wed, 12 Aug 2026 19:47:51 +0800</pubDate>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>0.11.21</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.20
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.21
 
-本次更新重点提升口测时的语音可靠性：
+本次更新重点修复 Mac 直接接听电话时的双方混淆：
 
-- 明显没说完的问题会等待后半句；完整新问题会立即换题，不再长期显示“考官正在补充”。
-- 手机免提“电话考官”模式启用实时说话人区分，考官问题和学生回答不会再混为同一类。
-- 追问会携带上一问和学生真实回答；例如回答 swimming 后，后续 why 模板会继续使用 swimming。
-- 增加静音保活、迟到终稿去重、音频设备变化恢复，以及网络/音频捕获统一自动重连。
-- 修复音频启动失败后可能残留旧捕获流的问题。
-- 题库外问题会先显示贴题的本地即时回答，再由 DeepSeek 进一步生成；网络较慢时不再先出现空泛、答非所问的句子。
-- 声源校准现在同时检测系统声音和麦克风，并可一键切换到更可靠的模式。
-- 电话考官模式会明确显示“已锁定考官”或“已区分双方”；学生澄清句不会触发换题。
-- 本次练习会记住学生真正说出的运动、食物、音乐、书籍、岗位和旅行事实，追问优先沿用真实回答。
-- DeepSeek 模板必须通过贴题性、上下文、双模板事实、翻译和长度检查后才会替换本地答案。
-- 新增默认收起的“卡壳急救”，可快速复制请求重复、争取思考时间和澄清题意的短句。
+- 音频菜单将双向模式明确标为“Mac 通话双向”，用于 Mac 上接听 iPhone 电话、微信、FaceTime 或其他电脑通话。
+- 系统声音固定作为考官声道，麦克风固定作为学生声道；麦克风中的你的回答不能更新当前问题。
+- 新增学生声音回灌保护：如果通话软件又把你的回答送进系统声道，应用会拦截重复字幕并保留当前问题和模板。
+- 声源校准同时检测到系统声音和麦克风时，会建议使用 Mac 通话双向，不再错误建议只用系统声音。
+- 主界面直接显示“麦克风只记录你的回答，不会替换当前问题”，避免临场选错模式。
+- 保留手机免提“电话考官”的说话人区分、追问上下文、双回答模板和 DeepSeek 一致性检查。
 
 题库仍提供完整回答和简单备用回答两套模板，英文下方保留中文翻译。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.20.zip" length="2929226" type="application/octet-stream" sparkle:edSignature="A83OECeTS099+ms9Bgl+UFW+IZFf+UilmR+Ytjelm2TSAJyNICdiP5g+XtA423ncXV/UHBnAgMn1eRMoDmE4Cg=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.21.zip" length="2930963" type="application/octet-stream" sparkle:edSignature="Z1XyP/jKr5jFDMb888gVLq6yQH4exu3sIpTAWsh2YP5oYWZn/VPEBsR96iI4zusJxugDHQGHUiqh5+RIWd6bDg=="/>
         </item>
     </channel>
 </rss>
