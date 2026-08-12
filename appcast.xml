@@ -3,26 +3,26 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.23</title>
-            <pubDate>Wed, 12 Aug 2026 20:29:36 +0800</pubDate>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>0.11.23</sparkle:shortVersionString>
+            <title>0.11.24</title>
+            <pubDate>Wed, 12 Aug 2026 21:22:57 +0800</pubDate>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>0.11.24</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.23
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.24
 
-本次更新新增手机免提下最稳妥的“按住屏蔽”模式：
+本次更新把所有实时口测统一为“按住作答”：
 
-- 选择“按住屏蔽”后，应用平时只听麦克风中的考官声音；轮到你回答时按住空格即可。
-- 按住期间，麦克风 PCM 会在上传 Deepgram 前替换成等长静音，你的回答不会被识别成考官问题；松开后立即继续听下一问。
-- 主窗口底部持续显示当前状态，也可以用鼠标按住；按下和松开都有清楚的文字、图标与颜色反馈。
-- 输入框正在编辑时，空格仍正常输入；Command、Option、Control 组合键不会误触屏蔽。
-- 停止监听、切换模式或重新开始时会自动复位，避免屏蔽状态卡住。
-- 该模式不转写你的回答；考官使用 “it / that sport / that job” 追问时，会以上一题屏幕上显示的回答作为上下文，减少前后矛盾。
+- 松开空格时只把考官声道送去问题识别；按住空格时只把你的麦克风送去回答识别。
+- 手机免提和 Mac 通话 / 录音都使用同一套操作，不再需要理解四种容易混淆的声音模式。
+- 松开后保留约 0.3 秒回答尾音，避免最后一个单词被截断；窗口失去焦点或停止监听时自动复位。
+- 两条转写连接始终保持待机，切换角色不需要重新联网，也不会因为网络延迟把上一角色的终稿丢掉。
+- 你的真实回答会写入当前轮上下文；例如回答 swimming 后，后续 “Why do you like that sport?” 的 A/B 两套模板都会继续使用 swimming。
+- 底部状态条明确显示“正在听考官 / 正在听你的回答 / 正在收尾”，也可以直接用鼠标按住。
 
-原有“电话考官”自动说话人区分、“Mac 通话双向”、双回答模板和 DeepSeek 一致性检查继续保留。
+双回答模板、中文逐句翻译、随机题 DeepSeek 分析和答案一致性检查继续保留。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.23.zip" length="2960626" type="application/octet-stream" sparkle:edSignature="jyrfKy1O9K7xu+sXOZPmwIp2QubbVZMgueKAemNIwWoDqw+4olN9M6MygGSKTIshzFUuLp2wdinQETpj5qMaAw=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.24.zip" length="2934599" type="application/octet-stream" sparkle:edSignature="mMrqfsQlHSOJAJ9d2cvRPSHTSlEKfGj18n1bihYysWmD4k7RMXUOqPLd2i4cHDUDdTlkL7zrZYLsC6prsUEzAg=="/>
         </item>
     </channel>
 </rss>
