@@ -3,13 +3,13 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.16</title>
-            <pubDate>Tue, 11 Aug 2026 14:09:51 +0800</pubDate>
-            <sparkle:version>43</sparkle:version>
-            <sparkle:shortVersionString>0.11.16</sparkle:shortVersionString>
+            <title>0.11.17</title>
+            <pubDate>Wed, 12 Aug 2026 12:50:18 +0800</pubDate>
+            <sparkle:version>44</sparkle:version>
+            <sparkle:shortVersionString>0.11.17</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.16.zip" length="1631063" type="application/octet-stream" sparkle:edSignature="/3AjxC05jfLcvWgBUZBUlmyoXGN5IK2ZK15n3F7SQdb46vGxbsy+lIuCOS41p/sflrL7/vPvi6zmeusQGxGiDg=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.17.zip" length="1642213" type="application/octet-stream" sparkle:edSignature="1LqgzknKZCS9iHf0e+zk+y8nUSVjxH5vrRuHoLHR8W2UdMwFoqs4PN6j12vTgwewTtDLCZH4xfJv4TGrxIdxCQ=="/>
         </item>
     </channel>
 </rss>
