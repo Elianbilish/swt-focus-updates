@@ -1,15 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-    <channel>
-        <title>SWT Focus</title>
-        <item>
-            <title>0.11.23</title>
-            <pubDate>Wed, 12 Aug 2026 20:29:36 +0800</pubDate>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>0.11.23</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.23
+# SWT Focus 0.11.23
 
 本次更新新增手机免提下最稳妥的“按住屏蔽”模式：
 
@@ -21,8 +10,3 @@
 - 该模式不转写你的回答；考官使用 “it / that sport / that job” 追问时，会以上一题屏幕上显示的回答作为上下文，减少前后矛盾。
 
 原有“电话考官”自动说话人区分、“Mac 通话双向”、双回答模板和 DeepSeek 一致性检查继续保留。
-]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.23.zip" length="2960626" type="application/octet-stream" sparkle:edSignature="jyrfKy1O9K7xu+sXOZPmwIp2QubbVZMgueKAemNIwWoDqw+4olN9M6MygGSKTIshzFUuLp2wdinQETpj5qMaAw=="/>
-        </item>
-    </channel>
-</rss>
