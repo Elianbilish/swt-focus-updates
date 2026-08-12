@@ -1,15 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-    <channel>
-        <title>SWT Focus</title>
-        <item>
-            <title>0.11.22</title>
-            <pubDate>Wed, 12 Aug 2026 19:54:04 +0800</pubDate>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>0.11.22</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.22
+# SWT Focus 0.11.22
 
 本次更新重点修复 Mac 直接接听电话时的双方混淆：
 
@@ -22,8 +11,3 @@
 - 保留手机免提“电话考官”的说话人区分、追问上下文、双回答模板和 DeepSeek 一致性检查。
 
 题库仍提供完整回答和简单备用回答两套模板，英文下方保留中文翻译。
-]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.22.zip" length="2933680" type="application/octet-stream" sparkle:edSignature="YdCPV6K880dE+0s/uMp9cKwiLzpgEBm7TE5Xxpl1dYjX7f5Vn90P940yoTxg9ZuPqwri+QelVrcEhcd6d2OjAA=="/>
-        </item>
-    </channel>
-</rss>
