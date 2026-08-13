@@ -3,13 +3,20 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.25</title>
-            <pubDate>Thu, 13 Aug 2026 11:33:26 +0800</pubDate>
-            <sparkle:version>52</sparkle:version>
-            <sparkle:shortVersionString>0.11.25</sparkle:shortVersionString>
+            <title>0.11.26</title>
+            <pubDate>Thu, 13 Aug 2026 13:30:21 +0800</pubDate>
+            <sparkle:version>53</sparkle:version>
+            <sparkle:shortVersionString>0.11.26</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.25
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.26
+
+- 修复长问题被直接忽略的缺陷：正常的长场景题不再受 60 词限制而丢失；带有长前言的录音会优先提取真正的问题句。
+- 识别到稳定的问题核心后会先给出本地可读模板；考官仍在补充时，界面只先显示一份临时模板，最终字幕到达后再精确更新。
+- DeepSeek 继续只在后台补全个性化内容，第一份模板不再等待网络请求。
+- 扩展了“客户很生气 / 遇到问题时如何处理”等长场景题的本地识别，立即显示贴题的 customer-service 模板。
+
+# SWT Focus 0.11.25
 
 - 修复“发现云端更新但点击安装后失败”：改为免费本机更新流程。下载包会先校验签名、应用身份和代码签名，验证通过才自动重启替换。
 - 设置页的按钮改为“下载并安装”，会直接显示下载、校验或失败状态，不再出现两层意思不清的安装按钮。
@@ -27,7 +34,7 @@
 
 双回答模板、中文逐句翻译、随机题 DeepSeek 分析和答案一致性检查继续保留。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.25.zip" length="1842363" type="application/octet-stream" sparkle:edSignature="43mWSCpBgO3riWtsWuIJ8jvXxpmGN8V9O+CLHfB12TxjVDS4ORGKcDGboy407I4QEd0TX6GWfvgNbAz7ivwnDw=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.26.zip" length="1844429" type="application/octet-stream" sparkle:edSignature="F9UCMZ17/elhfNFPOvcPzVZQOkvhZlkI8kU75JSOd/3qiVHoTQifqGM94gi3ddVzojDl3dji/NkYXE7pCSWYCA=="/>
         </item>
     </channel>
 </rss>
