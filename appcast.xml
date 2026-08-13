@@ -3,13 +3,21 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.30</title>
-            <pubDate>Thu, 13 Aug 2026 16:35:22 +0800</pubDate>
-            <sparkle:version>57</sparkle:version>
-            <sparkle:shortVersionString>0.11.30</sparkle:shortVersionString>
+            <title>0.11.31</title>
+            <pubDate>Thu, 13 Aug 2026 17:03:54 +0800</pubDate>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>0.11.31</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.30
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.31
+
+- 修复电话转写里“自我介绍”被重复识别的情况：`brief intro` 与 `brief introduction about yourself` 现在视为同一题，只保留信息完整的一次。
+- 修复 `And what's your name?` 被黏到上一问的问题；自我介绍、姓名、年龄会分别识别、按顺序合并回答。
+- 修复多题回答漏掉中文翻译的问题：中文答案现在逐项保留，不会因错误去重而只显示第一句。
+- 年龄未填写时不再把“请在设置中填写”这种内部提示塞进英文答案；会显示简洁的 `(your age)` 供你在设置保存真实年龄后自动替换。
+- 新增上述截图对应的完整流式回归：短版 ASR 终稿 + 完整终稿、重复自我介绍、姓名和年龄三问均已验证。
+
+# SWT Focus 0.11.30
 
 - 修复通话开场的连续问题："Could you introduce yourself? / Can you hear me? / Where are you?" 会逐题显示对应回答，不再落入题外万能答案。
 - 修复没有识别出问号的连续提问：识别到新的大写问句开头时，会安全拆成多题并按顺序合并答案。
@@ -58,7 +66,7 @@
 
 双回答模板、中文逐句翻译、随机题 DeepSeek 分析和答案一致性检查继续保留。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.30.zip" length="1860771" type="application/octet-stream" sparkle:edSignature="edadO7qHDT8uYjthOHM9GOd4QjgnNrio4SpArVBQtlv23M3E/chtdUNT7XApGJidEKRuiTk4qmdyhuiupZDVCQ=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.31.zip" length="1864798" type="application/octet-stream" sparkle:edSignature="H4tOjm1PEdVsJ5jQBG1fHMq3/3F99+GOulAgDDPL65s+VMbL8He142zAE9tT/VZFVV0/svCz2sScYGlAoWFtCg=="/>
         </item>
     </channel>
 </rss>
