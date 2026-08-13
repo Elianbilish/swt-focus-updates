@@ -3,13 +3,17 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.26</title>
-            <pubDate>Thu, 13 Aug 2026 13:30:21 +0800</pubDate>
-            <sparkle:version>53</sparkle:version>
-            <sparkle:shortVersionString>0.11.26</sparkle:shortVersionString>
+            <title>0.11.27</title>
+            <pubDate>Thu, 13 Aug 2026 13:34:10 +0800</pubDate>
+            <sparkle:version>54</sparkle:version>
+            <sparkle:shortVersionString>0.11.27</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.26
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.27
+
+- 修复已验证更新包在“练习设置”窗口内等待应用退出的问题：先正常关闭窗口；若 AppKit 没有结束进程，更新动作会在已完成安全校验后结束旧进程，让替换和重启继续执行。
+
+# SWT Focus 0.11.26
 
 - 修复长问题被直接忽略的缺陷：正常的长场景题不再受 60 词限制而丢失；带有长前言的录音会优先提取真正的问题句。
 - 识别到稳定的问题核心后会先给出本地可读模板；考官仍在补充时，界面只先显示一份临时模板，最终字幕到达后再精确更新。
@@ -34,7 +38,7 @@
 
 双回答模板、中文逐句翻译、随机题 DeepSeek 分析和答案一致性检查继续保留。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.26.zip" length="1844429" type="application/octet-stream" sparkle:edSignature="F9UCMZ17/elhfNFPOvcPzVZQOkvhZlkI8kU75JSOd/3qiVHoTQifqGM94gi3ddVzojDl3dji/NkYXE7pCSWYCA=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.27.zip" length="1844796" type="application/octet-stream" sparkle:edSignature="2JCRSt40Vv/wxsYCRa7M6SbnOfiwUcHffY+po36yBLTlFnLClaA0RhZljlb6gN5TxoT0/N0tvfvmoj8J9mQABQ=="/>
         </item>
     </channel>
 </rss>
