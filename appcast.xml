@@ -3,13 +3,18 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.24</title>
-            <pubDate>Wed, 12 Aug 2026 21:22:57 +0800</pubDate>
-            <sparkle:version>51</sparkle:version>
-            <sparkle:shortVersionString>0.11.24</sparkle:shortVersionString>
+            <title>0.11.25</title>
+            <pubDate>Thu, 13 Aug 2026 11:33:26 +0800</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>0.11.25</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.24
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.25
+
+- 修复“发现云端更新但点击安装后失败”：改为免费本机更新流程。下载包会先校验签名、应用身份和代码签名，验证通过才自动重启替换。
+- 设置页的按钮改为“下载并安装”，会直接显示下载、校验或失败状态，不再出现两层意思不清的安装按钮。
+
+# SWT Focus 0.11.24
 
 本次更新把所有实时口测统一为“按住作答”：
 
@@ -22,7 +27,7 @@
 
 双回答模板、中文逐句翻译、随机题 DeepSeek 分析和答案一致性检查继续保留。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.24.zip" length="2934599" type="application/octet-stream" sparkle:edSignature="mMrqfsQlHSOJAJ9d2cvRPSHTSlEKfGj18n1bihYysWmD4k7RMXUOqPLd2i4cHDUDdTlkL7zrZYLsC6prsUEzAg=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.25.zip" length="1842363" type="application/octet-stream" sparkle:edSignature="43mWSCpBgO3riWtsWuIJ8jvXxpmGN8V9O+CLHfB12TxjVDS4ORGKcDGboy407I4QEd0TX6GWfvgNbAz7ivwnDw=="/>
         </item>
     </channel>
 </rss>
