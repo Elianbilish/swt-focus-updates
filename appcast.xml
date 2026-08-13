@@ -3,13 +3,29 @@
     <channel>
         <title>SWT Focus</title>
         <item>
-            <title>0.11.28</title>
-            <pubDate>Thu, 13 Aug 2026 13:40:05 +0800</pubDate>
-            <sparkle:version>55</sparkle:version>
-            <sparkle:shortVersionString>0.11.28</sparkle:shortVersionString>
+            <title>0.11.30</title>
+            <pubDate>Thu, 13 Aug 2026 16:35:22 +0800</pubDate>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>0.11.30</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.28
+            <description sparkle:format="markdown"><![CDATA[# SWT Focus 0.11.30
+
+- 修复通话开场的连续问题："Could you introduce yourself? / Can you hear me? / Where are you?" 会逐题显示对应回答，不再落入题外万能答案。
+- 修复没有识别出问号的连续提问：识别到新的大写问句开头时，会安全拆成多题并按顺序合并答案。
+- 修复岗位问题被截断时的误匹配："What kind of job do you want to apply ..." 会等待后半句，拼完整后匹配赴美岗位模板。
+- 按住空格开始回答即锁定本轮问题；松开后才接收下一问，避免考官新问题或迟到字幕混入你正在回答的上下文。
+- 新增上述三类回归检查；题库匹配、断句拼接、141 组真实问法与 60 组审校题均已通过本地验证。
+
+# SWT Focus 0.11.29
+
+- 重构多问题处理：一段话中的多个问题会按顺序拆开，模板 1 与模板 2 都覆盖每一题。
+- 追问会优先沿用你刚刚说出的事实；例如回答 swimming 后，“Why do you like it?” 不会变成 basketball。
+- 题库内的审校模板不再被网络模型改写；DeepSeek V4-Flash 只在题库外问题或题库外子题上后台补全。
+- DeepSeek 请求加入短超时与轮次校验。考官开始下一问时，旧请求立即作废，不能再覆盖新题。
+- 已加入长问题、两题/三题、连续追问、学生尾音迟到等运行时回归测试。
+
+# SWT Focus 0.11.28
 
 - 完成应用内更新的真实回归验证：下载、签名校验、退出旧版、替换应用和自动重启会作为一条完整流程执行。
 
@@ -42,7 +58,7 @@
 
 双回答模板、中文逐句翻译、随机题 DeepSeek 分析和答案一致性检查继续保留。
 ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.28.zip" length="1844796" type="application/octet-stream" sparkle:edSignature="UftNO811197ErxDRKtgX0BMIHAiPA8HBeEA6CxpI7f+p5jKuRKJrQ7w9O1OI7y8EzKDzjjdZg34C1dYA1WTqCA=="/>
+            <enclosure url="https://raw.githubusercontent.com/Elianbilish/swt-focus-updates/main/SWT-Focus-0.11.30.zip" length="1860771" type="application/octet-stream" sparkle:edSignature="edadO7qHDT8uYjthOHM9GOd4QjgnNrio4SpArVBQtlv23M3E/chtdUNT7XApGJidEKRuiTk4qmdyhuiupZDVCQ=="/>
         </item>
     </channel>
 </rss>
